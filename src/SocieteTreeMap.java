@@ -1,14 +1,18 @@
+import java.util.HashMap;
+import java.util.TreeMap;
+
 public class SocieteTreeMap implements InterfaceSociete{
 
+    TreeMap<Employe,Departement> tree=new TreeMap<>() ;
 
     @Override
     public void ajouterEmployeDepartement(Employe e, Departement d) {
-
+    tree.put(e,d);
     }
 
     @Override
     public void supprimerEmploye(Employe e) {
-
+    tree.remove(e);
     }
 
     @Override

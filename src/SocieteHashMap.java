@@ -1,17 +1,25 @@
-public class SocieteHashMap implements InterfaceSociete {
-    @Override
-    public void ajouterEmployeDepartement(Employe e, Departement d) {
+import java.util.HashMap;
 
+public class SocieteHashMap implements InterfaceSociete {
+
+
+    HashMap <Employe,Departement> hash=new HashMap<>();
+
+    @Override
+
+    public void ajouterEmployeDepartement(Employe e, Departement d) {
+    hash.put(e,d);
     }
 
     @Override
     public void supprimerEmploye(Employe e) {
+        hash.remove(e);
 
     }
 
     @Override
     public void afficherLesEmployesLeursDepartements() {
-
+        hash.
     }
 
     @Override
